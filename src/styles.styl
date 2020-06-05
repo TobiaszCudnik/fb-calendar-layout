@@ -1,0 +1,93 @@
+/* TODO import css reset */
+*
+  padding 0
+  margin 0
+  border 0
+  box-sizing border-box
+  font-family Verdana, Arial, Helvetica, sans-serif
+
+ul
+  list-style none
+
+default-font-size=12px
+background-font-color=#A5A5A5
+
+.day
+
+  hours=12
+
+  white-space nowrap
+  padding 10px 0 0 15px
+
+  .sidebar
+
+    margin-right 5px
+    color dimgray
+    height hours + 1 * 60 px
+    display inline-block
+    vertical-align top
+    /* disable extra whitespace */
+    font-size 0
+
+    > li
+      font-weight bold
+      line-height 30px
+      font-size default-font-size
+      text-align right
+
+      &:nth-child(even)
+        font-size default-font-size * 0.7
+        color background-font-color
+        font-weight normal
+        
+      span
+        font-weight normal
+        color background-font-color
+        margin-left 0.5em
+        font-size default-font-size * 0.7
+        line-height 10px
+
+  .events
+
+    background-color #ECECEC
+    position relative
+    /* +1 because of the border-box */
+    width 621px
+    border-left 1px solid #DADADA
+    padding 0 10px
+    /* shift to match hour labels */
+    margin-top 15px
+    height hours * 60 px
+    display inline-block
+    /* disable extra whitespace */
+    font-size 0
+
+    > li
+      /* TODO nib should be used here */
+      transition = all 0.2s ease-out
+      transition transition
+      -webkit-transition transition
+      -moz-transition transition
+      -o-transition transition
+
+      overflow hidden
+      font-size default-font-size * 0.7
+      color background-font-color
+      border-left 4px solid #5274AA
+      position absolute
+      background white
+
+      > div
+        overflow auto
+        border 1px lightgray solid
+        border-left-width 0
+        height 100%
+
+        h6
+          padding 7px 7px 1px 7px
+          font-weight bold
+          color #5274AA
+          font-size default-font-size
+
+        p
+          padding 0 7px 7px 7px

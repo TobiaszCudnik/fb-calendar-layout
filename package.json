@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "compare-property": "latest",
+    "stylus": "latest",
+    "source-map-support": "latest",
+    "browserify": "latest",
+    "watchify": "latest",
+    "uglifyify": "latest",
+    "coffeeify": "latest"
+  }
+}
