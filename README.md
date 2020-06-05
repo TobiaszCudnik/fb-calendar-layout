@@ -1,4 +1,4 @@
-# fb-calendar-layout
+# FB Calendar Layout
 
 Facebook interview from 2015:
 
